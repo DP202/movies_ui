@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmlane - Best movie collections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/info.css">
+</head>
+
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logo.svg" alt="Filmlane logo" />
+            </a>
+
+            <div class="header-actions">
+                <button class="search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <div class="lang-wrapper">
+                    <label for="language">
+                        <ion-icon name="globe-outline"></ion-icon>
+                    </label>
+
+                    <select name="language" id="language">
+                        <option value="en">EN</option>
+                        <option value="au">AU</option>
+                        <option value="ar">AR</option>
+                        <option value="tu">TU</option>
+                    </select>
+                </div>
+
+                <a href="../movie-detail/form.html">
+                    <button class="btn btn-primary">Sign in</button>
+                </a>
+            </div>
+
+            <button class="menu-open-btn" data-menu-open-btn>
+                <ion-icon name="reorder-two"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.svg" alt="Filmlane logo" />
+                    </a>
+
+                    <button class="menu-close-btn" data-menu-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li>
+                        <a href="./index.html" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./top-film.html" class="navbar-link">Top Film</a>
+                    </li>
+
+                    <li>
+                        <a href="./anime.html" class="navbar-link">Anime</a>
+                    </li>
+
+                    <li>
+                        <a href="../movie-detail/info.html" class="navbar-link  active">Introduce</a>
+                    </li>
+
+                    <li>
+                        <a href="../movie-detail/lab.html" class="navbar-link">Lab</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-social-list">
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="information">
+        <div class="container">
+            <h1>Giới thiệu đề tài</h1>
+            <div class="box-desc">
+                <h2>Công nghệ sử dụng</h2>
+                <ul class="box-list">
+                    <li> - Sử dụng HTML5 , CSS</li>
+                    <li> - Sử dụng Javascript</li>
+                </ul>
+                <h2>Mục đích sử dụng</h2>
+                <ul class="box-list">
+                    <li> - Áp dụng các kiến thức đã được học để xây dựng trang web xem phim</li>
+                    <li> - Tạo ra trang web xem phim để giải trí</li>
+                </ul>
+                <h2>Một số tính năng chính</h2>
+                <ul class="box-list">
+                    <li> - Hiển thị trên tất cả các thiết bị</li>
+                    <li> - Ẩn hiện menu</li>
+                    <li> - Sử dụng animation</li>
+                    <li> - Sử dụng fixed trên thanh header trên mọi thiết bị</li>
+                    <li> - Sử dụng pseudo hover</li>
+                    <li> - Phân trang Web</li>
+                    <li> - Hiển thị nút Back to top để cuộn thanh sroll lên đầu trang chủ</li>
+                    <li> - Sử dụng Javascript để mở phần dropdown trong phần Lab thực hành ở cuối trang Web </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

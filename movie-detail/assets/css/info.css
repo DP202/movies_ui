@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.information {
+  margin: 100px 0 30px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/info_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  position: relative;
+}
+.information::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #66ffcc;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.box-desc {
+  margin-top: 20px;
+  position: relative;
+  color: #fff;
+  z-index: 3;
+}
+ul {
+  margin-top: 10px;
+}
+li {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+h2 {
+  color: #66ffcc;
+  font-size: 30px;
+}
+
+header {
+  background-color: var(--eerie-black);
+}
+
+/* Responsive */
+
+/* mobile và tablet */
+@media (max-width: 1023px) {
+  .hide-all {
+    display: none;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* tablet */
+  .hide-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  /* mobile */
+  .hide-mobile {
+    display: none;
+  }
+  .information {
+    padding: 12px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
